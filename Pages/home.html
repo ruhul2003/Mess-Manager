@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="bg-olive-300">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,16 +10,18 @@
     <title>Home</title>
     <link rel="stylesheet" href="/Styles/style.css">
 </head>
-<body class="w-9/12 flex justify-center items-center bg-cover bg-center mx-auto py-7 bg-olive-300">
-    <header class="w-full">
-        <nav class="flex flex-row justify-between px-4 items-center w-full">
+<body class="w-10/12 mx-auto  h-screen">
+
+    <!------------------------- Header ------------------------------>
+    <header class="w-full mt-5 items-center ">
+        <nav class="flex flex-row justify-between items-center w-full">
             <div><h1 class="text-4xl text-green-500 font-bold">MM.</h1></div>
             <div class="nav-menu">
                 <ul class="flex flex-row gap-9">
-                    <li class="text-lg font-bold"><a href="#">Home</a></li>
-                    <li class="text-lg font-bold"><a href="#">About</a></li>
-                    <li class="text-lg font-bold"><a href="#">Contact</a></li>
-                    <li class="text-lg font-bold"><a href="#">Feedback</a></li>
+                    <li class="text-lg hover:text-green-400 hover:bg-slate-400 px-2 py-2 rounded-md font-bold"><a href="#">Home</a></li>
+                    <li class="text-lg hover:text-green-400 hover:bg-slate-400 px-2 py-2 rounded-md font-bold"><a href="#">About</a></li>
+                    <li class="text-lg hover:text-green-400 hover:bg-slate-400 px-2 py-2 rounded-md font-bold"><a href="#">Contact</a></li>
+                    <li class="text-lg hover:text-green-400 hover:bg-slate-400 px-2 py-2 rounded-md font-bold"><a href="#">Feedback</a></li>
                 </ul>
             </div>
 
@@ -28,5 +30,21 @@
            
         </nav>
     </header>
+
+    <!------------------------- Dashboard ------------------------------>
+    <section class="mt-8 bg-blue-300 py-6 px-2 items-center">
+        <h1 class="text-2xl font-bold ml-6">Mess Name, Month</h1>
+        <div class="mt-8 ml-28 flex flex-col gap-4">
+            <h2 class="text-2xl ">Mess Balance : <span class="ml-10 font-bold">0.00</span></h2>
+            <h2 class="text-2xl ">Total Deposit : <span class="ml-10 font-bold">0.00</span></h2>
+            <h2 class="text-2xl ">Mess Total Meal : <span class="ml-10 font-bold">0.00</span></h2>
+            <h2 class="text-2xl ">Mess Total Meal Cost : <span class="ml-10 font-bold">0.00</span></h2>
+            <h2 class="text-2xl ">Mess Meal Rate : <span class="ml-10 font-bold">0.00</span></h2>
+        </div>
+    </section>
+
+    <!------------------------- Personal Information ------------------------------>
+    
+    
 </body>
 </html>
