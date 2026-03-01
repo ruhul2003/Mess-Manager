@@ -37,20 +37,20 @@
     </header>
 
     <!------------------------- Dashboard ------------------------------>
-    <section class="mt-8 bg-[#E0E7FF] py-6 px-2 items-center rounded-lg">
+    <section class="mt-8 bg-[#E0E7FF] py-6 px-2 items-center rounded-lg shadow-xl">
         <h1 class="text-2xl text-[#6367FF] font-bold ml-6">Mess Name, Month</h1>
         <div class="mt-8 ml-28 flex flex-col gap-4">
-            <h2 class="text-2xl text-[#020452]">Mess Balance : <span class="ml-10 font-semibold">0.00</span></h2>
-            <h2 class="text-2xl text-[#020452]">Total Deposit : <span class="ml-10 font-semibold">0.00</span></h2>
-            <h2 class="text-2xl text-[#020452]">Mess Total Meal : <span class="ml-10 font-semibold">0.00</span></h2>
-            <h2 class="text-2xl text-[#020452]">Mess Total Meal Cost : <span class="ml-10 font-semibold">0.00</span></h2>
-            <h2 class="text-2xl text-[#020452]">Mess Meal Rate : <span class="ml-10 font-semibold">0.00</span></h2>
+            <h2 class="text-2xl text-[#020452]">Mess Balance : <span class="ml-10 font-semibold">0.00</span><span> <i class="fa-solid fa-bangladeshi-taka-sign"></i></span></h2>
+            <h2 class="text-2xl text-[#020452]">Total Deposit : <span class="ml-10 font-semibold">0.00</span><span> <i class="fa-solid fa-bangladeshi-taka-sign"></i></span></h2>
+            <h2 class="text-2xl text-[#020452]">Mess Total Meal : <span class="ml-10 font-semibold">0.00</span><span> <i class="fa-solid fa-bangladeshi-taka-sign"></i></span></h2>
+            <h2 class="text-2xl text-[#020452]">Mess Total Meal Cost : <span class="ml-10 font-semibold">0.00</span><span> <i class="fa-solid fa-bangladeshi-taka-sign"></i></span></h2>
+            <h2 class="text-2xl text-[#020452]">Mess Meal Rate : <span class="ml-10 font-semibold">0.00</span><span> <i class="fa-solid fa-bangladeshi-taka-sign"></i></span></h2>
         </div>
     </section>
 
     <!------------------------- Personal Information ------------------------------>
 
-    <section class="mt-8 bg-[#E0E7FF] py-6 px-2 rounded-lg">
+    <section class="mt-8 bg-gradient-to-r from-indigo-300 to-green-100 py-6 px-2 rounded-lg shadow-xl">
         <h1 class="text-3xl font-bold text-[#6367FF] text-center">Personal Information</h1>
         <div class="flex flex-row justify-center gap-20 mt-6">
             <div class="flex flex-col gap-5 justify-center items-center mt-5">
@@ -90,19 +90,19 @@
 
     <!------------------------- Management ------------------------------>
 
-    <section class="mt-7 py-4 bg-[#E0E7FF] pl-3 rounded-lg">
+    <section class="mt-7 py-4 bg-gradient-to-r from-green-100 to-indigo-300 pl-3 rounded-lg shadow-xl">
         <div class="flex flex-col gap-7 w-52">
-            <button class="btn btn-outline  btn-primary">Add Member</button>
-            <button class="btn btn-outline  btn-primary">Add Deposit</button>
-            <button class="btn btn-outline  btn-primary">Add Meal</button>
-            <button class="btn btn-outline  btn-primary">Add Cost</button>
-            <button class="btn btn-outline  btn-primary">Active Month Details</button>
+            <button class="btn btn-outline  btn-primary">Add Member <i class="fa-solid fa-user-plus"></i></button>
+            <button class="btn btn-outline  btn-primary">Add Deposit <i class="fa-solid fa-piggy-bank"></i></button>
+            <button class="btn btn-outline  btn-primary">Add Meal <i class="fa-solid fa-bowl-rice"></i></button>
+            <button class="btn btn-outline  btn-primary">Add Cost <i class="fa-solid fa-hand-holding-dollar"></i></button>
+            <button class="btn btn-outline  btn-primary">Active Month Details <i class="fa-solid fa-circle-info"></i></button>
         </div>
     </section>
 
     <!--------------------------- Advance ------------------------------>
 
-    <section class="mt-7 bg-[#E0E7FF] flex flex-col justify-center items-center rounded-lg mb-5">
+    <section class="mt-7 bg-gradient-to-r from-green-200 to-indigo-300 flex flex-col justify-center items-center rounded-lg mb-5 shadow-xl">
         <div class="py-7 mx-auto flex flex-row gap-7">
             <button class="btn btn-primary">All Member <i class="fa-solid fa-user-group"></i></button>
             <button class="btn btn-primary ">Change Manager <i class="fa-solid fa-person-military-to-person"></i></button>
@@ -112,5 +112,8 @@
         </div>
     </section>
     
+
+    <script src="/Scripts/login.js"></script>
+    <script src="/Scripts/logout.js"></script>
 </body>
 </html>
