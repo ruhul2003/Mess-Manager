@@ -92,16 +92,47 @@
 
     <section class="mt-7 py-4 flex flex-row gap-40 bg-gradient-to-r from-green-100 to-indigo-300 pl-3 rounded-lg shadow-xl">
         <div class="flex flex-col gap-7 w-52">
-            <button id="add-member-btn" class="btn btn-outline  btn-primary">Add Member <i class="fa-solid fa-user-plus"></i></button>
-            <button id="add-deposit-btn" class="btn btn-outline  btn-primary">Add Deposit <i class="fa-solid fa-piggy-bank"></i></button>
             <button id="add-meal-btn" class="btn btn-outline  btn-primary">Add Meal <i class="fa-solid fa-bowl-rice"></i></button>
+            <button id="add-deposit-btn" class="btn btn-outline  btn-primary">Add Deposit <i class="fa-solid fa-piggy-bank"></i></button>
             <button id="add-cost-btn" class="btn btn-outline  btn-primary">Add Cost <i class="fa-solid fa-hand-holding-dollar"></i></button>
+            <button id="add-member-btn" class="btn btn-outline  btn-primary">Add Member <i class="fa-solid fa-user-plus"></i></button>
             <button class="btn btn-outline  btn-primary">Active Month Details <i class="fa-solid fa-circle-info"></i></button>
         </div>
 
         <!--------------------------- Manage Box ------------------------------>
 
         <div>
+
+             <!--------------------------- Add Meal ------------------------------>
+
+            <div id="add-meal-form" class="w-96 h-full rounded-lg shadow-xl p-5 hidden">
+                <h1 class="text-2xl text-[#6367FF] font-bold mb-5">Add Meal</h1>
+                    <select class="select mb-3 w-full max-w-xs outline-none border-0">
+                        <option disabled selected>Choose A Member</option>
+                        <option>Member 1</option>
+                        <option>Member 2</option>
+                        <option>Member 3</option>
+                    </select>
+                <div class="w-full max-w-xs">
+                    <input type="range" min="0" max="100" value="25" class="range range-primary range-sm" step="25" />
+                    <div class="flex justify-between px-2.5 mt-2 text-xs">
+                        <span>|</span>
+                        <span>|</span>
+                        <span>|</span>
+                        <span>|</span>
+                        <span>|</span>
+                    </div>
+                    <div class="flex justify-between px-2.5 mt-2 text-xs">
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>4</span>
+                        <span>5</span>
+                    </div>
+                </div>
+                <button id="add-meal-submit-btn" class="btn btn-primary mt-7">Add <i class="fa-solid fa-bowl-rice"></i></button>
+            </div>
+
             <!--------------------------- Add Member ------------------------------>
             <div id="add-member-form" class="w-96 h-full rounded-lg shadow-xl p-5 hidden">
                 <h1 class="text-2xl text-[#6367FF] font-bold mb-5">Add Member</h1>
@@ -124,21 +155,14 @@
                 <button id="add-deposit-submit-btn" class="btn btn-primary mt-7">Add <i class="fa-solid fa-piggy-bank"></i></button>
             </div>
 
-            <!--------------------------- Add Meal ------------------------------>
-
-            <div id="add-meal-form" class="w-96 h-full rounded-lg shadow-xl p-5 hidden">
-                <h1 class="text-2xl text-[#6367FF] font-bold mb-5">Add Meal</h1>
-                <input type="text" placeholder="Member Name" class="input outline-none w-full max-w-xs mb-3">
-                <input type="text" placeholder="Meal Amount" class="input outline-none w-full max-w-xs mb-3">
-                <button id="add-meal-submit-btn" class="btn btn-primary mt-7">Add <i class="fa-solid fa-bowl-rice"></i></button>
-            </div>
+           
 
             <!--------------------------- Add Cost ------------------------------>
 
             <div id="add-cost-form" class="w-96 h-full rounded-lg shadow-xl p-5 hidden">
                 <h1 class="text-2xl text-[#6367FF] font-bold mb-5">Add Cost</h1>
-                <input type="text" placeholder="Cost Description" class="input outline-none w-full max-w-xs mb-3">
-                <input type="text" placeholder="Cost Amount" class="input outline-none w-full max-w-xs mb-3">
+                <textarea placeholder="Description" class="textarea textarea-primary outline-none mb-3 border-0"></textarea>
+                <input type="text" placeholder="Total Cost Amount" class="input outline-none w-full max-w-xs mb-3">
                 <button id="add-cost-submit-btn" class="btn btn-primary mt-7">Add <i class="fa-solid fa-hand-holding-dollar"></i></button>
             </div>
 
