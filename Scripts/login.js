@@ -10,7 +10,7 @@ loginButton.addEventListener('click', function() {
         alert('Please enter email and password');
         return;
     }
-    else if(emailValue === 'ruhul941020@gmail.com' && passwordValue === '123456') {
+    else if(emailValue === 'admin' && passwordValue === 'admin123') {
         window.location.href = 'home.html';
     }
     else {
