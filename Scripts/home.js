@@ -91,17 +91,21 @@ addMemberSubmitBtn.addEventListener("click", function () {
   // add card to container
   memberContainer.appendChild(card);
   // show success alert
-  const successAlert = document.getElementById("success-alert");
-  const successMessage = document.getElementById("success-message");
+  // show success alert
+  const successAlert = document.getElementById("success-alert"); // select alert
+  const successText = successAlert.querySelector("span"); // select message text
 
-  successMessage.innerText = memberName + " successfully added!";
-  successAlert.classList.remove("hidden");
+  successText.innerText = memberName + " successfully added!"; // change message
+  successAlert.classList.remove("hidden"); // show alert
 
-  const closeAlertBtn = document.getElementById("close-alert");
+  const closeAlertBtn = document.getElementById("close-alert"); // select close button
 
   closeAlertBtn.addEventListener("click", function () {
-    document.getElementById("success-alert").classList.add("hidden");
+    document.getElementById("success-alert").classList.add("hidden"); // hide alert
   });
+  setTimeout(() => {
+    successAlert.classList.add("hidden");
+}, 3000);
 
   // clear input fields
   memberNameInput.value = "";
